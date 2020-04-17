@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Chess, Chessboard, Javascript, Play Chess, Javascript Chess, three.js, chessboard.js, chessboard3.js">
+        <title>chessboard3.js</title>
+
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+        <link type="text/css" rel="stylesheet" href="css/site.css">
+        <link type="text/css" rel="stylesheet" href="css/chessboard.css">
+        <link type="text/css" rel="stylesheet" href="css/play.css">
+        <link type="text/css" rel="stylesheet" href="css/sweetalert.css">
+        <script type="text/javascript" src="js/sweetalert.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+
+        <script type="text/javascript" src="js/three.js"></script>
+        <script type="text/javascript" src="js/OrbitControls.js"></script>
+        <script type="text/javascript" src="js/chessboard3.js"></script>
+
+        <!--Use chessboard.js as a fallback library -->
+        <script type="text/javascript" src="js/chessboard.js"></script>
+
+        <!-- game state, move validation, PGN, etc -->
+        <script type="text/javascript" src="js/chess.js"></script>
+
+        <script type="text/javascript" src="js/raphael-min.js"></script>
+        <script type="text/javascript" src="js/jquery.sonic-gauge.js"></script>
+
+        <script type="text/javascript" src="js/play.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <h1>3D chess game</h1>
+        </header>
+      
+        <article id="container">
+            <div id="board">
+                <h1 class="vertical-align">GAME LOADING</h1>
+            </div>
+      <div id="side">
+              
+
+                <div id="gaugebox">
+                    <div id="optionsBox">
+                    
+                      
+                        <br>
+                        <h3>Always select stockfish</h3>
+                        <select id="engineMenu">
+                          <option value="js/p4wn.js">p4wn</option>
+                            <option value="js/lozza.js" selected>Lozza</option>
+                            <option value="js/stockfish.js">stockfish</option>
+                        </select>
+                        <br>
+                       
+                    </div>
+                   
+                </div>
+               
+                
+            </div> 
+        </article>
+        
+    </body>
+</html>
